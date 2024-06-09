@@ -2,8 +2,6 @@ import requests
 import pandas as pd
 from datetime import date
 
-url = 'http://v0.ovapi.nl/line/'
-
 def retrieve_API_info(url: str) -> [any, int] :
     response = requests.get(url)
     status_code = response.status_code
